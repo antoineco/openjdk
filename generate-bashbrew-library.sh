@@ -38,11 +38,8 @@ dirCommit() {
 }
 
 cat <<-EOH
-# this file is generated via https://github.com/docker-library/openjdk/blob/$(fileCommit "$self")/$self
-
-Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
-             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
-GitRepo: https://github.com/docker-library/openjdk.git
+Maintainers: Antoine Cotten <tonio.cotten@gmail.com> (@antoineco)
+GitRepo: https://github.com/antoineco/openjdk.git
 EOH
 
 # prints "$2$1$3$1...$N"
@@ -94,24 +91,12 @@ aliases() {
 }
 
 for version in "${versions[@]}"; do
-	commit="$(dirCommit "$version")"
-
 	javaVersion="$version" # "6-jdk"
 	javaType="${javaVersion##*-}" # "jdk"
 	javaVersion="${javaVersion%-$javaType}" # "6"
 
-	fullVersion="$(git show "$commit":"$version/Dockerfile" | awk '$1 == "ENV" && $2 == "JAVA_VERSION" { gsub(/~/, "-", $3); print $3; exit }')"
-
-	echo
-	cat <<-EOE
-		Tags: $(join ', ' $(aliases "$javaVersion" "$javaType" "$fullVersion"))
-		GitCommit: $commit
-		Directory: $version
-	EOE
-
 	for v in \
-		alpine \
-		windows/windowsservercore windows/nanoserver \
+		centos \
 	; do
 		dir="$version/$v"
 		variant="$(basename "$v")"
