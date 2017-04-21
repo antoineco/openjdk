@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-* `6u41-jdk-centos`, `6u41-centos`, `6-jdk-centos`, `6-centos` [(6-jdk/centos/Dockerfile)][dockerfile-jdk6]
-* `6u41-jre-centos`, `6-jre-centos` [(6-jre/centos/Dockerfile)][dockerfile-jre6]
-* `7u131-jdk-centos`, `7u131-centos`, `7-jdk-centos`, `7-centos` [(7-jdk/centos/Dockerfile)][dockerfile-jdk7]
-* `7u131-jre-centos`, `7-jre-centos` [(7-jre/centos/Dockerfile)][dockerfile-jre7]
-* `8u121-jdk-centos`, `8u121-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)][dockerfile-jdk8]
-* `8u121-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)][dockerfile-jre8]
+* `6u41-jdk-centos`, `6u41-centos`, `6-jdk-centos`, `6-centos` [(6-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/6-jdk/centos/Dockerfile)
+* `6u41-jre-centos`, `6-jre-centos` [(6-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/6-jre/centos/Dockerfile)
+* `7u131-jdk-centos`, `7u131-centos`, `7-jdk-centos`, `7-centos` [(7-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/7-jdk/centos/Dockerfile)
+* `7u131-jre-centos`, `7-jre-centos` [(7-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/7-jre/centos/Dockerfile)
+* `8u131-jdk-centos`, `8u131-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/d18ee93c11d6830c8b5724348a77feafe8e87d49/8-jdk/centos/Dockerfile)
+* `8u131-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/d18ee93c11d6830c8b5724348a77feafe8e87d49/8-jre/centos/Dockerfile)
 
 ![logo](https://raw.githubusercontent.com/antoineco/openjdk/master/logo.png)
 
@@ -74,12 +74,6 @@ Any push to the upstream [`centos`][docker-centos] repository or to the source r
 ![Automated build pipeline][pipeline]
 
 
-[dockerfile-jdk6]: https://github.com/antoineco/openjdk/blob/master/6-jdk/centos/Dockerfile
-[dockerfile-jre6]: https://github.com/antoineco/openjdk/blob/master/6-jre/centos/Dockerfile
-[dockerfile-jdk7]: https://github.com/antoineco/openjdk/blob/master/7-jdk/centos/Dockerfile
-[dockerfile-jre7]: https://github.com/antoineco/openjdk/blob/master/7-jre/centos/Dockerfile
-[dockerfile-jdk8]: https://github.com/antoineco/openjdk/blob/master/8-jdk/centos/Dockerfile
-[dockerfile-jre8]: https://github.com/antoineco/openjdk/blob/master/8-jre/centos/Dockerfile
 [banner]: https://raw.githubusercontent.com/antoineco/openjdk/master/logo.png
 [docker-openjdk]: https://hub.docker.com/_/openjdk/
 [docker-centos]: https://hub.docker.com/_/centos/
