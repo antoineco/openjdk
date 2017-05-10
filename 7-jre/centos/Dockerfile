@@ -18,10 +18,10 @@ RUN { \
 	} > /usr/local/bin/docker-java-home \
 	&& chmod +x /usr/local/bin/docker-java-home
 
-ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.131-2.6.9.0.el7_3.x86_64/jre
+ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.141-2.6.10.1.el7_3.x86_64/jre
 
-ENV JAVA_VERSION 7u131
-ENV JAVA_CENTOS_VERSION 1.7.0.131-2.6.9.0.el7_3
+ENV JAVA_VERSION 7u141
+ENV JAVA_CENTOS_VERSION 1.7.0.141-2.6.10.1.el7_3
 
 RUN set -x \
 	&& yum install -y \
