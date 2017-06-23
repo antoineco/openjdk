@@ -29,7 +29,7 @@ centos-latest-version() {
 		sqlite3 "$repoDbFile" \
 			"SELECT version, release FROM packages \
 				WHERE name = '$package' AND arch = 'x86_64' \
-				ORDER BY version DESC LIMIT 1;" \
+				ORDER BY version DESC, release DESC LIMIT 1;" \
 			| tr '|' '-'
 	)"
 	rm "$repoDbFile"
