@@ -4,8 +4,8 @@
 * `6u41-jre-centos`, `6-jre-centos` [(6-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/6-jre/centos/Dockerfile)
 * `7u141-jdk-centos`, `7u141-centos`, `7-jdk-centos`, `7-centos` [(7-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/81740b28025cac8808db3243f5f73033d066ba69/7-jdk/centos/Dockerfile)
 * `7u141-jre-centos`, `7-jre-centos` [(7-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/81740b28025cac8808db3243f5f73033d066ba69/7-jre/centos/Dockerfile)
-* `8u131-jdk-centos`, `8u131-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/9e825911ee2b319f5821c848eff7c88b199c5013/8-jdk/centos/Dockerfile)
-* `8u131-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/9e825911ee2b319f5821c848eff7c88b199c5013/8-jre/centos/Dockerfile)
+* `8u141-jdk-centos`, `8u141-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/c8f00a112ab32508f20b4c7b844f1f6c7ca689e5/8-jdk/centos/Dockerfile)
+* `8u141-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/c8f00a112ab32508f20b4c7b844f1f6c7ca689e5/8-jre/centos/Dockerfile)
 
 ![logo](https://raw.githubusercontent.com/antoineco/openjdk/master/logo.png)
 
