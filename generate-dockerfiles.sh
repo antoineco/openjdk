@@ -20,19 +20,25 @@ centos-latest-version() {
 	local osVersion="$1"; shift
 	local mirror='' repoDbUrl='' repoDbFile='' latestVersion=''
 
-	mirror="$(wget -qO- "http://mirrorlist.centos.org/?release=$osVersion&arch=x86_64&repo=updates" | shuf -n1)"
-	repoDbFile="$(mktemp)"
-	repoDbUrl="$(wget -qO- "$mirror"repodata/repomd.xml | awk -F\" '/primary.sqlite.bz2/ {print $2}')"
+	local repos=( updates os )
 
-	wget -qO- "${mirror}${repoDbUrl}" | bunzip2 >"$repoDbFile"
-	latestVersion="$(
-		sqlite3 "$repoDbFile" \
-			"SELECT version, release FROM packages \
-				WHERE name = '$package' AND arch = 'x86_64' \
-				ORDER BY version DESC, release DESC LIMIT 1;" \
-			| tr '|' '-'
-	)"
-	rm "$repoDbFile"
+	for repo in "${repos[@]}"; do
+		mirror="$(wget -qO- "http://mirrorlist.centos.org/?release=$osVersion&arch=x86_64&repo=$repo" | shuf -n1)"
+		repoDbFile="$(mktemp)"
+		repoDbUrl="$(wget -qO- "$mirror"repodata/repomd.xml | awk -F\" '/primary.sqlite.bz2/ {print $2}')"
+
+		wget -qO- "${mirror}${repoDbUrl}" | bunzip2 >"$repoDbFile"
+		latestVersion="$(
+			sqlite3 "$repoDbFile" \
+				"SELECT version, release FROM packages \
+					WHERE name = '$package' AND arch = 'x86_64' \
+					ORDER BY version DESC, release DESC LIMIT 1;" \
+				| tr '|' '-'
+		)"
+		rm "$repoDbFile"
+
+		[ -n "$latestVersion" ] && break
+	done
 
 	echo "$latestVersion"
 }
