@@ -2,10 +2,10 @@
 
 * `6u41-jdk-centos`, `6u41-centos`, `6-jdk-centos`, `6-centos` [(6-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/6-jdk/centos/Dockerfile)
 * `6u41-jre-centos`, `6-jre-centos` [(6-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/0b088859625ab1775c6c8942650de32114f29a14/6-jre/centos/Dockerfile)
-* `7u141-jdk-centos`, `7u141-centos`, `7-jdk-centos`, `7-centos` [(7-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/81740b28025cac8808db3243f5f73033d066ba69/7-jdk/centos/Dockerfile)
-* `7u141-jre-centos`, `7-jre-centos` [(7-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/81740b28025cac8808db3243f5f73033d066ba69/7-jre/centos/Dockerfile)
-* `8u141-jdk-centos`, `8u141-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/c8f00a112ab32508f20b4c7b844f1f6c7ca689e5/8-jdk/centos/Dockerfile)
-* `8u141-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/c8f00a112ab32508f20b4c7b844f1f6c7ca689e5/8-jre/centos/Dockerfile)
+* `7u151-jdk-centos`, `7u151-centos`, `7-jdk-centos`, `7-centos` [(7-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/1648e639a25df5febfb2412b0f2a02803e1a56e4/7-jdk/centos/Dockerfile)
+* `7u151-jre-centos`, `7-jre-centos` [(7-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/1648e639a25df5febfb2412b0f2a02803e1a56e4/7-jre/centos/Dockerfile)
+* `8u144-jdk-centos`, `8u144-centos`, `8-jdk-centos`, `8-centos`, `jdk-centos`, `centos` [(8-jdk/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/1648e639a25df5febfb2412b0f2a02803e1a56e4/8-jdk/centos/Dockerfile)
+* `8u144-jre-centos`, `8-jre-centos`, `jre-centos` [(8-jre/centos/Dockerfile)](https://github.com/antoineco/openjdk/blob/1648e639a25df5febfb2412b0f2a02803e1a56e4/8-jre/centos/Dockerfile)
 
 ![logo](https://raw.githubusercontent.com/antoineco/openjdk/master/logo.png)
 
