@@ -18,9 +18,9 @@ GitCommit: b069781a9863fbf07744f04e2c1b51cdcdd5bcbe
 Directory: 7-jre/centos
 
 Tags: 8u151-jdk-centos, 8u151-centos, 8-jdk-centos, 8-centos, jdk-centos, centos
-GitCommit: a07607420816d2bbdef64b27768cb245efabe0df
+GitCommit: 87b45d8439adbdf2e7bb5dccd732f023e4452d65
 Directory: 8-jdk/centos
 
 Tags: 8u151-jre-centos, 8-jre-centos, jre-centos
-GitCommit: a07607420816d2bbdef64b27768cb245efabe0df
+GitCommit: 87b45d8439adbdf2e7bb5dccd732f023e4452d65
 Directory: 8-jre/centos
